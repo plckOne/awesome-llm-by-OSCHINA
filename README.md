@@ -30,6 +30,17 @@ Lit-LLaMA 是一个基于 nanoGPT 的 LLaMA 语言模型的实现，支持量化
 
 Lit-LLaMA 认为人工智能应该完全开源并成为集体知识的一部分。但原始的 LLaMA 代码采用 GPL 许可证，这意味着使用它的任何项目也必须在 GPL 下发布。这“污染”了其他代码，阻止了与生态系统的集成。Lit-LLaMA 永久性地解决了这个问题。
 
+### [GloVe —— 斯坦福大学的词向量工具](https://nlp.stanford.edu/projects/glove/)
+
+GloVe的全称叫Global Vectors for Word Representation，它是一个基于全局词频统计（count-based & overall statistics）的词表征（word representation）工具，它可以把一个单词表达成一个由实数组成的向量，这些向量捕捉到了单词之间一些语义特性，比如相似性（similarity）、类比性（analogy）等。我们通过对向量的运算，比如欧几里得距离或者cosine相似度，可以计算出两个单词之间的语义相似性。
+
+以下是 GloVe 提供的预训练词向量，遵循 [Public Domain Dedication and License](http://opendatacommons.org/licenses/pddl/) 许可。
+
+-   [Wikipedia 2014](http://dumps.wikimedia.org/enwiki/20140102/)+[Gigaword 5](https://catalog.ldc.upenn.edu/LDC2011T07)(6B tokens, 400K vocab, uncased, 50d, 100d, 200d, & 300d vectors, 822 MB download):[glove.6B.zip](https://nlp.stanford.edu/data/glove.6B.zip)
+-   Common Crawl (42B tokens, 1.9M vocab, uncased, 300d vectors, 1.75 GB download):[glove.42B.300d.zip](https://nlp.stanford.edu/data/glove.42B.300d.zip)
+-   Common Crawl (840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB download):[glove.840B.300d.zip](https://nlp.stanford.edu/data/glove.840B.300d.zip)
+-   Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased, 25d, 50d, 100d, & 200d vectors, 1.42 GB download):[glove.twitter.27B.zip](https://nlp.stanford.edu/data/glove.twitter.27B.zip)
+
 ### [Dolly —— 低成本大语言模型](https://www.oschina.net/p/dolly)
 
 Dolly 是一个低成本的 LLM，Dolly 采用 EleutherAI 现有的 60 亿参数的开源模型，并对其进行细微的修改，以激发指令跟随能力。
