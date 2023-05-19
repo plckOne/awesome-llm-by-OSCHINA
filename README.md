@@ -337,3 +337,200 @@ YaLM 100B是一个类似 GPT 的神经网络，用于生成和处理文本。
 OpenLLaMA 是 Meta AI 的 LLaMA 大语言模型的开源复现版本，采用宽松许可证。
 
 仓库包含经过训练的 2000 亿标记的 7B OpenLLaMA 模型的公共预览版，并提供了预训练的 OpenLLaMA 模型的 PyTorch 和 Jax 权重，以及评估结果和与原始 LLaMA 模型的比较。
+
+## LLM 相关工具
+
+### [LangChain —— 构建 LLM 应用的工具](https://www.oschina.net/p/langchain)
+
+LangChain 是一个用于构建基于大型语言模型（LLM）的应用程序的库。它可以帮助开发者将 LLM 与其他计算或知识源结合起来，创建更强大的应用程序。
+
+LangChain 提供了以下几个主要模块来支持这些应用程序的开发：
+
+-   Prompts：这包括提示管理、提示优化和提示序列化。
+-   LLMs：这包括所有 LLM 的通用接口，以及与 LLM 相关的常用工具。
+-   Document Loaders：这包括加载文档的标准接口，以及与各种文本数据源的特定集成。
+-   Utils：语言模型在与其他知识或计算源交互时通常更强大。这可能包括 Python REPL、嵌入、搜索引擎等。LangChain 提供了一系列常用的工具来在应用程序中使用。
+-   Chains：Chains 不仅仅是一个单独的 LLM 调用，而是一系列的调用（无论是对 LLM 还是其他工具）。LangChain 提供了链的标准接口，许多与其他工具的集成，以及常见应用程序的端到端链。
+-   Indexes：语言模型在与自己的文本数据结合时通常更强大 - 这个模块涵盖了这样做的最佳实践。
+-   Agents：Agents 涉及到一个 LLM 在决定采取哪些行动、执行该行动、看到一个观察结果，并重复这个过程直到完成。LangChain 提供了代理的标准接口，可供选择的代理，以及端到端代理的示例。
+-   Memory：Memory 是在链 / 代理调用之间持久化状态的概念。LangChain 提供了内存的标准接口，一系列内存实现，以及使用内存的链 / 代理示例。
+-   Chat：Chat 模型是一种与语言模型不同的 API - 它们不是使用原始文本，而是使用消息。LangChain 提供了一个标准接口来使用它们，并做所有上述相同的事情。
+
+### [JARVIS —— 连接 LLM 和 AI 模型的协作系统](https://www.oschina.net/p/jarvis)
+
+JARVIS 是用于连接 LLM 和 AI 模型的协作系统。该系统**由 LLM（大语言模型）作为控制器**和许多**AI 模型作为协作执行者**（来自 HuggingFace Hub）组成。
+
+![](https://oscimg.oschina.net/oscnet/up-0338143e9a7bd7cbd08bd9afcf9bf99648a.png)
+
+系统的工作流程包括四个阶段：
+
+-   **任务规划**：使用 ChatGPT 分析用户的请求，了解他们的意图，并将其拆解成可解决的任务。
+-   **模型选择**：为了解决计划的任务，ChatGPT 根据描述选择托管在 Hugging Face 上的 AI 模型。
+-   **任务执行**：调用并执行每个选定的模型，并将结果返回给 ChatGPT。
+-   **生成响应**: 最后使用 ChatGPT 整合所有模型的预测，生成 Response。
+
+![](https://oscimg.oschina.net/oscnet/up-9e413c85881e9a3ee0a2a160971b787d353.png)
+
+### [Semantic Kernel —— 集成 LLM 到应用程序的 SDK](https://www.oschina.net/p/semantic-kernel)
+
+Semantic Kernel 是一种轻量级 SDK，可将 AI 大语言模型 (LLM) 与传统编程语言集成。
+
+Semantic Kernel 可扩展编程模型结合了自然语言语义功能、传统代码原生功能和基于嵌入的内存，释放新的潜力并通过 AI 为应用程序增加价值。
+
+![](https://oscimg.oschina.net/oscnet/up-3b2812fc768d081ce8c036bb258a542cc75.png)
+
+Semantic Kernel 旨在支持和封装来自最新 AI 研究的多种设计模式，以便开发人员可以为他们的应用程序注入复杂的技能，如提示链、递归推理、总结、零 / 少样本学习、上下文记忆、长期记忆、嵌入、语义索引、规划和访问外部知识存储以及内部数据等功能。
+
+### [LMFlow —— 大语言模型的可扩展工具包](https://www.oschina.net/p/lmflow)
+
+LMFlow 由香港科技大学统计和机器学习实验室团队发起，致力于建立一个全开放的大模型研究平台，支持有限机器资源下的各类实验，并且在平台上提升现有的数据利用方式和优化算法效率，让平台发展成一个比之前方法更高效的大模型训练系统。
+
+LMFlow 的最终目的是帮助每个人都可以用尽量少的资源来训练一个专有领域的、个性化的大模型，以此来推进大模型的研究和应用落地。
+
+LMFlow 拥有四大特性：**可扩展、轻量级、定制化和完全开源**。
+
+![](https://oscimg.oschina.net/oscnet/up-e14776d5cbdb3bf9990a02bc957a8fbc8f2.png)
+
+基于此，用户可以很快地训练自己的模型并继续进行二次迭代。这些模型不仅限于最近流行的 LLaMA，也包括 GPT-2、Galactica 等模型。
+
+### [xturing —— LLM 个性化微调工具](https://www.oschina.net/p/xturing)
+
+xturing 为 LLM 提供了快速、高效和简单的微调，如 LLaMA、GPT-J、GPT-2、OPT、Cerebras-GPT、Galactica 等。通过提供一个易于使用的界面，再根据你自己的数据和应用来个性化 LLM，xTuring 使构建和控制 LLM 变得简单。整个过程可以在你的电脑内或在你的私有云中完成，确保数据的隐私和安全。
+
+通过 xturing，你可以：
+
+-   从不同的来源摄取数据，并将其预处理成 LLM 可以理解的格式
+-   从单个 GPU 扩展到多个 GPU，以便更快地进行微调
+-   利用内存效率高的技术（即 LoRA 微调）来减少你的硬件成本，最多可减少 90% 的时间。
+-   探索不同的微调方法，并以它们为基准，找到性能最好的模型
+-   在明确定义的指标上评估微调模型，进行深入分析
+
+### [Dify —— 易用的 LLMOps 平台](https://www.oschina.net/p/dify)
+
+Dify是一个易用的 LLMOps 平台，旨在让更多人可以创建可持续运营的原生 AI 应用。Dify 提供多种类型应用的可视化编排，应用可开箱即用，也能以 “后端即服务” 的 API 提供服务。
+
+“Dify” 这个名字来源于 “Define” 和 “Modify” 这两个词。它代表了帮助开发人员不断改进其 AI 应用程序的愿景。“Dify” 可以理解为 “Do it for you”。
+
+通过 Dify 创建的应用包含了：
+
+-   开箱即用的的 Web 站点，支持表单模式和聊天对话模式
+-   一套 API 即可包含插件、上下文增强等能力，替你省下了后端代码的编写工作
+-   可视化的对应用进行数据分析，查阅日志或进行标注
+
+Dify 兼容 Langchain，这意味着将逐步支持多种 LLMs ，目前已支持：
+
+-   GPT 3 (text-davinci-003)
+-   GPT 3.5 Turbo(ChatGPT)
+-   GPT-4
+
+**[Dify.AI](http://Dify.AI) 核心能力**
+
+-   可视化编排 Prompt：通过界面化编写 prompt 并调试，只需几分钟即可发布一个 AI 应用。
+-   接入长上下文（数据集）：全自动完成文本预处理，使用你的数据作为上下文，无需理解晦涩的概念和技术处理。
+-   基于 API 开发后端即服务。你可以直接访问网页应用，也可以接入 API 集成到你的应用中，无需关注复杂的后端架构和部署过程。
+-   数据标注与改进：可视化查阅 AI 日志并对数据进行改进标注，观测 AI 的推理过程，不断提高其性能。
+
+正在开发中的功能：
+
+-   数据集，支持更多的数据集，例如同步 Notion 或网页的内容。将支持更多的数据集，包括文本、网页，甚至 Notion 内容。用户可以根据自己的数据源构建 AI 应用程序。
+-   插件，推出符合 ChatGPT 标准的插件，或使用 Dify 产生的插件。将发布符合 ChatGPT 标准的插件，或者 Dify 自己的插件，以在应用程序中启用更多功能。
+-   开源模型，例如采用 Llama 作为模型提供者，或进行进一步的微调 。将与优秀的开源模型如 Llama 合作，通过在平台中提供它们作为模型选项，或使用它们进行进一步的微调。
+
+### [Flowise —— 轻松构建 LLM 应用程序](https://www.oschina.net/p/flowise)
+
+Flowise 是一个开源 UI 可视化工具，使用以 Node Typescript/Javascript 编写的 LangchainJS 构建自定义 LLM 流程。
+
+-   LLM Chain：带有提示模板和 LLM 模型的 LLM Chain的基本示例
+
+![](https://static.oschina.net/uploads/space/2023/0504/145806_ooxV_4252687.png)
+
+-   **Language Translation Chain**：使用带有聊天提示模板和聊天模型的 LLM Chain 进行语言翻译
+
+![](https://static.oschina.net/uploads/space/2023/0504/150024_IUdD_4252687.png)
+
+-   有记忆的会话代理：聊天模型的会话代理，它利用聊天特定提示和缓冲存储器
+
+![](https://static.oschina.net/uploads/space/2023/0504/150045_9LNC_4252687.png)
+
+### [Jigsaw Datase —— 提高大型语言模型性能的工具](https://www.oschina.net/p/jigsaw-datase)
+
+Jigsaw 是微软推出的一种可以提高大型语言模型性能（如 GPT-3、Codex 等）的新工具。
+
+Jigsaw 部署了理解程序语法和语义的后处理技术，然后利用用户反馈来提高未来的性能；该工具旨在使用多模式输入为 Python Pandas API 合成代码。Pandas 是数据科学中广泛使用的 API，具有数百个用于 manipulating dataframes 或具有行和列的表的函数。
+
+目标是使部分审查自动化，以提高使用 Codex 等大型语言模型进行代码合成的开发人员的生产力。
+
+Jigsaw 获取英语查询并使用适当的上下文对其进行预处理，以构建可以馈送到大型语言模型的输入。该模型被视为一个黑盒子，并且 Jigsaw 已使用 GPT-3 和 Codex 进行了评估。这种设计的优势在于它支持即插即用最新和最好的可用型号。
+
+微软在实验中发现，Jigsaw 可以在 30% 的时间内创建正确的输出。如果代码失败，那么修复过程在后处理阶段开始。
+
+![](https://static.oschina.net/uploads/space/2022/0412/170306_pjWG_4252687.png)
+
+### [GPTCache —— 为 LLM 查询创建语义缓存的库](https://www.oschina.net/p/gptcache)
+
+GPTCache 是一个用于创建语义缓存以存储来自 LLM 查询的响应的库。将你的 LLM API 成本削减 10 倍，将速度提高 100 倍。
+
+ChatGPT 和各种大型语言模型（LLM）拥有令人难以置信的多功能性，能够开发广泛的应用程序。然而，随着你的应用程序越来越受欢迎，遇到更高的流量水平，与 LLM API 调用相关的费用可能会变得很高。此外，LLM 服务可能会表现出缓慢的响应时间，特别是在处理大量的请求时。GPTCache 的创建就是为了应对这一挑战，这是一个致力于建立一个用于存储 LLM 响应的语义缓存的项目。
+
+### [闻达 —— LLM 调用平台](https://www.oschina.net/p/wenda)
+
+闻达：一个大型语言模型调用平台。目前支持 chatGLM-6B、chatRWKV、chatYuan 和 chatGLM-6B 模型下自建知识库查找。
+
+1.  目前支持模型：`chatGLM-6B`、`chatRWKV`、`chatYuan`。
+2.  知识库自动查找
+3.  支持参数在线调整
+4.  支持`chatGLM-6B`、`chatRWKV`流式输出和输出过程中中断
+5.  自动保存对话历史至浏览器（多用户同时使用不会冲突）
+6.  对话历史管理（删除单条、清空）
+7.  支持局域网、内网部署和多用户同时使用。（内网部署需手动将前段静态资源切换成本地）
+8.  多用户同时使用中会自动排队，并显示当前用户。
+
+**设置和预设功能**
+
+![](https://static.oschina.net/uploads/space/2023/0406/161141_tzfG_4252687.png)
+
+**预设功能使用**
+
+![](https://static.oschina.net/uploads/space/2023/0406/161120_sMl8_4252687.png)
+
+### [MindFormers ——大模型训练/推理/部署全流程开发套件](https://www.oschina.net/p/mindformers)
+
+MindSpore MindFormers 套件的目标是构建一个大模型训练、推理、部署的全流程开发套件： 提供业内主流的 Transformer 类预训练模型和 SOTA 下游任务应用，涵盖丰富的并行特性。 期望帮助用户轻松的实现大模型训练和创新研发。
+
+MindSpore MindFormers 套件基于 MindSpore 内置的并行技术和组件化设计，具备如下特点：
+
+-   一行代码实现从单卡到大规模集群训练的无缝切换。
+-   提供灵活易用的个性化并行配置。
+-   能够自动进行拓扑感知，高效地融合数据并行和模型并行策略。
+-   一键启动任意任务的训练、评估、推理流程。
+-   支持用户进行组件化配置任意模块，如优化器、学习策略、网络组装等。
+-   提供 Trainer、ModelClass、ConfigClass、pipeline 等高阶易用性接口。
+
+目前支持的模型列表如下：
+
+-   BERT
+-   GPT
+-   OPT
+-   T5
+-   MAE
+-   SimMIM
+-   CLIP
+-   FILIP
+-   Vit
+-   Swin
+
+### [Code as Policies —— 自然语言代码生成系统](https://www.oschina.net/p/code-as-policies)
+
+Code as Policies 是一种以机器人为中心的语言模型生成的程序在物理系统上执行的表述。CaP 扩展了 PaLM-SayCan，使语言模型能够通过通用 Python 代码的完整表达来完成更复杂的机器人任务。通过 CaP，Google 建议使用语言模型，通过少量的提示来直接编写机器人代码。实验证明，与直接学习机器人任务和输出自然语言动作相比，CaP 输出代码表现更好。CaP 允许单一系统执行各种复杂多样的机器人任务，而不需要特定的任务训练。
+
+![](https://static.oschina.net/uploads/space/2022/1108/184107_2rqM_4937141.png)
+
+用于控制机器人的常见方法是用代码对其进行编程，以检测物体、移动执行器的排序命令和反馈回路来指定机器人应如何执行任务。但为每项新任务重新编程的可能很耗时，而且需要领域的专业知识。
+
+### [Colossal-AI —— 大模型并行训练系统](https://www.oschina.net/p/colossalai)
+
+ColossalAI 是一个具有高效并行化技术的综合大规模模型训练系统。旨在无缝整合不同的并行化技术范式，包括数据并行、管道并行、多张量并行和序列并行。
+
+Colossal-AI 的目标是支持人工智能社区以与他们正常编写模型相同的方式编写分布式模型。这使得他们可以专注于开发模型架构，并将分布式训练的问题从开发过程中分离出来。
+
+ColossalAI 提供了一组并行训练组件。旨在支持用户编写分布式深度学习模型，就像编写单 GPU 模型一样。提供友好的工具，只需几行即可启动分布式培训。
