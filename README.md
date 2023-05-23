@@ -239,6 +239,10 @@ Bloom 是用于自然语言处理的大语言模型，包含 1760 亿个参数�
 
 BLOOM 模型的最大优势是它的易获取性，任何个人或机构都可以从 Hugging Face 免费获得 1760 亿个参数的完整模型。用户有多个语种可选，然后将需求输入到 BLOOM 中，任务类型包括撰写食谱或诗歌、翻译或总结文本，甚至还有代码编程。人工智能开发者可以在该模型的基础上构建他们自己的应用程序。
 
+### [BLOOMChat —— 176B 的开源可商用多语言聊天 LLM](https://huggingface.co/sambanovasystems/BLOOMChat-176B-v1)
+
+BLOOMChat 是一个新的、开放的、多语言的聊天 LLM。SambaNova 和 Together 使用 SambaNova 独特的可重构数据流架构在 SambaNova DataScale 系统上训练了 BLOOMChat；其建立在 BigScience 组织的 BLOOM 之上，并在 OpenChatKit、Dolly 2.0 和 OASST1 的 OIG 上进行了微调。
+
 ### [GPT-J —— 自然语言处理 AI 模型](https://www.oschina.net/p/gpt-j)
 
 GPT-J 是一个基于 GPT-3，由 60 亿个参数组成的自然语言处理 AI 模型。
