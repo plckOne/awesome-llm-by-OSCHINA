@@ -109,9 +109,9 @@ ChatYuan 是一个支持中英双语的功能型对话语言大模型。ChatYuan
 
 ChatYuan-large-v2 是 ChatYuan 系列中以轻量化实现高质量效果的模型之一，用户可以在消费级显卡、 PC 甚至手机上进行推理（INT4 最低只需 400M ）。
 
-### [华驼 (HuaTuo) —— 基于中文医学知识的 LLaMA 微调模型](https://www.oschina.net/p/huatuo-llama)
+### [本草 —— 基于中文医学知识的 LLaMA 微调模型](https://www.oschina.net/p/huatuo-llama)
 
-华驼 (HuaTuo) 是基于中文医学知识的 LLaMA 微调模型。
+本草(BenTsao)【原名：华驼 (HuaTuo)】是基于中文医学知识的 LLaMA 微调模型。
 
 此项目开源了经过中文医学指令精调 / 指令微调 (Instruct-tuning) 的 LLaMA-7B 模型。通过医学知识图谱和 GPT3.5 API 构建了中文医学指令数据集，并在此基础上对 LLaMA 进行了指令微调，提高了 LLaMA 在医疗领域的问答效果。
 
