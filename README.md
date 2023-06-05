@@ -313,7 +313,7 @@ CodeGeeX 有以下特点：
 -   自动编程插件：CodeGeeX 插件现已上架 VSCode 插件市场（完全免费），用户可以通过其强大的少样本生成能力，自定义代码生成风格和能力，更好辅助代码编写。
 -   模型跨平台开源: 所有代码和模型权重开源开放，用作研究用途。CodeGeeX 同时支持昇腾和英伟达平台，可在单张昇腾 910 或英伟达 V100/A100 上实现推理。
 
-### [**Falcon** —— 开源语言模型](https://huggingface.co/TheBloke/falcon-40b-instruct-GPTQ)
+### [**Falcon LLM** —— 开源语言模型](https://huggingface.co/TheBloke/falcon-40b-instruct-GPTQ)
 
 「Falcon」由阿联酋阿布扎比的技术创新研究所（TII）开发，从性能上看，Falcon比LLaMA的表现更好。TII表示，Falcon迄今为止最强大的开源语言模型。其最大的版本，Falcon 40B，拥有400亿参数，相对于拥有650亿参数的LLaMA来说，规模上还是小了一点。规模虽小，性能能打。
 
