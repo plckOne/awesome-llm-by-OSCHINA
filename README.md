@@ -109,6 +109,14 @@ ChatYuan 是一个支持中英双语的功能型对话语言大模型。ChatYuan
 
 ChatYuan-large-v2 是 ChatYuan 系列中以轻量化实现高质量效果的模型之一，用户可以在消费级显卡、 PC 甚至手机上进行推理（INT4 最低只需 400M ）。
 
+### [华佗 GPT —— 开源中文医疗大模型](https://www.oschina.net/p/HuatuoGPT)
+
+HuatuoGPT（华佗 GPT）是开源中文医疗大模型，基于医生回复和 ChatGPT 回复，让语言模型成为医生，提供丰富且准确的问诊。
+
+![](https://oscimg.oschina.net/oscnet/up-ca8350053e21dd55542ee9418caee0c158d.png)
+
+HuatuoGPT 致力于通过融合 ChatGPT 生成的 “蒸馏数据” 和真实世界医生回复的数据，以使语言模型具备像医生一样的诊断能力和提供有用信息的能力，同时保持对用户流畅的交互和内容的丰富性，对话更加丝滑。
+
 ### [本草 —— 基于中文医学知识的 LLaMA 微调模型](https://www.oschina.net/p/huatuo-llama)
 
 本草(BenTsao)【原名：华驼 (HuaTuo)】是基于中文医学知识的 LLaMA 微调模型。
