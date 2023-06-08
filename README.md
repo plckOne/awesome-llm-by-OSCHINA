@@ -212,6 +212,14 @@ BELLE: Be Everyone's Large Language model Engine（开源中文对话大模型�
 
 本项目目标是促进中文对话大模型开源社区的发展，愿景做能帮到每一个人的 LLM Engine。现阶段本项目基于一些开源预训练大语言模型（如 BLOOM），针对中文做了优化，模型调优仅使用由 ChatGPT 生产的数据（不包含任何其他数据）。
 
+### [TigerBot —— 多模态大语言模型](https://github.com/TigerResearch/TigerBot)
+
+TigerBot 是一个多语言多任务的大规模语言模型(LLM)。根据 OpenAI InstructGPT 论文在公开 NLP 数据集上的自动评测，TigerBot-7B 达到 OpenAI 同样大小模型的综合表现的 96%。
+
+### [YuLan-Chat —— 大语言对话模型](https://github.com/RUC-GSAI/YuLan-Chat)
+
+中国人民大学高瓴人工智能学院相关研究团队（由多位学院老师联合指导）展开了一系列关于指令微调技术的研究，并发布了学院初版大语言对话模型——YuLan-Chat，旨在探索和提升大语言模型的中英文双语对话能力。
+
 ## 开源 LLM
 
 ### [LLaMA —— Meta 大语言模型](https://www.oschina.net/p/llama)
