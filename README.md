@@ -403,6 +403,18 @@ OpenLLaMA 是 Meta AI 的 LLaMA 大语言模型的开源复现版本，采用宽
 
 ## LLM 相关工具
 
+### [OpenLLM —— 操作大语言模型的开放平台](https://www.oschina.net/p/openllm)
+
+OpenLLM 是一个生产级的操作大语言模型 (LLM) 的开放平台。支持便捷 Fine-tune 微调、Serve 模型服务、部署和监控任何 LLM。借助 OpenLLM，可以使用任何开源大语言模型运行推理，部署到云端或本地，并构建强大的 AI 应用程序。
+
+OpenLLM 特性包括：
+
+- 先进的 LLM：内置支持各种开源 LLM 和模型运行时，包括 StableLM、Falcon、Dolly、Flan-T5、ChatGLM、StarCoder 等。
+- 灵活的 API：只需一个命即可通过 RESTful API 或 gRPC 为 LLM 提供服务，并通过 WebUI、CLI、Python/Javascript 客户端或任何 HTTP 客户端进行查询。
+- 自由构建：对 LangChain、BentoML 和 Hugging Face 具有一级支持，可以通过将 LLM 与其它模型和服务组合来轻松创建自己的 AI 应用程序。
+- 简化部署：自动生成 LLM 服务器 Docker 镜像或通过 BentoCloud 部署为无服务器端节点。
+- 自建 LLM：使用 LLM.tuning() 微调任何 LLM 以满足特定需求。 （即将推出）
+
 ### [LangChain —— 构建 LLM 应用的工具](https://www.oschina.net/p/langchain)
 
 LangChain 是一个用于构建基于大型语言模型（LLM）的应用程序的库。它可以帮助开发者将 LLM 与其他计算或知识源结合起来，创建更强大的应用程序。
