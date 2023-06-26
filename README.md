@@ -20,6 +20,10 @@ ChatGLM-6B 是一个开源的、支持中英双语问答的对话语言模型，
 
 ChatGLM-6B 使用了和 ChatGLM 相同的技术，针对中文问答和对话进行了优化。经过约 1T 标识符的中英双语训练，辅以监督微调、反馈自助、人类反馈强化学习等技术的加持，62 亿参数的 ChatGLM-6B 虽然规模不及千亿模型，但大大降低了推理成本，提升了效率，并且已经能生成相当符合人类偏好的回答。
 
+### [ChatGLM2-6B —— 中英双语对话模型 ChatGLM-6B 的第二代版本](https://github.com/THUDM/ChatGLM2-6B)
+
+基于 ChatGLM 初代模型的开发经验，ChatGLM2-6B 全面升级了基座模型，更长的上下文，更高效的推理、更开放的协议。
+
 ### [VisualGLM-6B —— 多模态对话语言模型](https://github.com/THUDM/VisualGLM-6B)
 
 VisualGLM-6B 是一个开源的，支持图像、中文和英文的多模态对话语言模型，语言模型基于 ChatGLM-6B，具有 62 亿参数；图像部分通过训练 BLIP2-Qformer 构建起视觉模型与语言模型的桥梁，整体模型共78亿参数。
