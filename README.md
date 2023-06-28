@@ -610,13 +610,13 @@ Colossal-AI 的目标是支持人工智能社区以与他们正常编写模型�
 
 ColossalAI 提供了一组并行训练组件。旨在支持用户编写分布式深度学习模型，就像编写单 GPU 模型一样。提供友好的工具，只需几行即可启动分布式培训。
 
-### BentoML 统一模型部署框架
+### [BentoML 统一模型部署框架](https://www.oschina.net/p/bentoml)
 
 BentoML 是 AI 应用程序开发人员的平台，提供工具和基础架构来简化整个 AI 产品开发生命周期。BentoML 使创建准备好部署和扩展的机器学习服务变得容易。
 
 BentoML 原生支持所有流行的 ML 框架，包括 Pytorch、Tensorflow、JAX、XGBoost、HuggingFace、MLFlow，以及最新的预构建开源 LLM（大型语言模型）和生成式 AI 模型。
 
-#### Highlights
+ **Highlights** 
 
  **Unified Model Serving API** 
 
