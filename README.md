@@ -609,3 +609,41 @@ ColossalAI 是一个具有高效并行化技术的综合大规模模型训练系
 Colossal-AI 的目标是支持人工智能社区以与他们正常编写模型相同的方式编写分布式模型。这使得他们可以专注于开发模型架构，并将分布式训练的问题从开发过程中分离出来。
 
 ColossalAI 提供了一组并行训练组件。旨在支持用户编写分布式深度学习模型，就像编写单 GPU 模型一样。提供友好的工具，只需几行即可启动分布式培训。
+
+### BentoML 统一模型部署框架
+
+BentoML 是 AI 应用程序开发人员的平台，提供工具和基础架构来简化整个 AI 产品开发生命周期。BentoML 使创建准备好部署和扩展的机器学习服务变得容易。
+
+BentoML 原生支持所有流行的 ML 框架，包括 Pytorch、Tensorflow、JAX、XGBoost、HuggingFace、MLFlow，以及最新的预构建开源 LLM（大型语言模型）和生成式 AI 模型。
+
+#### Highlights
+
+ **Unified Model Serving API** 
+
+- 适用于 Tensorflow、PyTorch、XGBoost、Scikit-Learn、ONNX 等的框架无关的模型打包
+- 为预处理 / 后处理和业务逻辑编写自定义 Python 代码以及模型推理
+- 为在线（REST API 或 gRPC）、离线批处理和流式推理应用相同的代码
+- 用于构建多模型推理管道或图形的简单抽象
+
+ **无摩擦过渡到生产的标准化流程** 
+
+- 将 Bento 构建为 ML 服务的标准可部署工件
+- 自动生成具有所需依赖项的 docker 镜像
+- 使用 GPU 进行推理的简单 CUDA 设置
+- 与 MLOps 生态系统的丰富集成，包括 Kubeflow、Airflow、MLFlow、Triton
+
+ **具有强大的性能优化的可扩展性** 
+
+- 自适应批处理根据服务器端最佳性能动态分组推理请求
+- Runner 抽象将模型推理与你的自定义代码分开进行 scales
+- 通过自动配置最大化你的 GPU 和多核 CPU 利用率
+
+ **以 DevOps 友好的方式部署到任何地方** 
+
+- 通过以下方式简化生产部署工作流程：
+  - BentoML Cloud：部署便当的最快方式，简单且大规模
+  - Yatai：在 Kubernetes 上大规模部署模型
+  - bentoctl：在 AWS SageMaker、Lambda、ECE、GCP、Azure、Heroku 等平台上快速部署模型！
+- 使用 Spark 或 Dask 运行离线批量推理作业
+- 对 Prometheus 指标和 OpenTelemetry 的内置支持
+- 用于高级 CI/CD 工作流程的灵活 API
