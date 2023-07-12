@@ -620,6 +620,12 @@ BentoML 是 AI 应用程序开发人员的平台，提供工具和基础架构�
 
 BentoML 原生支持所有流行的 ML 框架，包括 Pytorch、Tensorflow、JAX、XGBoost、HuggingFace、MLFlow，以及最新的预构建开源 LLM（大型语言模型）和生成式 AI 模型。
 
+### [NSQL —— 开源 SQL 协同生成基础模型](https://www.numbersstation.ai/)
+
+NSQL，这是一个专为 SQL 生成任务设计的全新开源大型基础模型 （FM） 系列，包括 NSQL 350M、NSQL 2B 和 NSQL 6B。
+
+![](https://global-uploads.webflow.com/634ffbcbb664f41204dc9d40/64ac1417f0c89cde25a43e4c_Graphic.png)
+
  **Highlights** 
 
  **Unified Model Serving API** 
