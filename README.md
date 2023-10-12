@@ -238,6 +238,46 @@ TigerBot 是一个多语言多任务的大规模语言模型(LLM)。根据 OpenA
 
 ## 开源 LLM
 
+### [通义千问-7B —— 基于 Transformer 的大语言模型](https://www.oschina.net/p/qwen-7b)
+
+通义千问 - 7B（Qwen-7B） 是阿里云研发的通义千问大模型系列的 70 亿参数规模的模型。
+
+Qwen-7B 基于 Transformer 在超大规模的预训练数据上进行训练得到。预训练数据类型多样，覆盖广泛，包括大量网络文本、专业书籍、代码等。同时，在 Qwen-7B 的基础上，使用对齐机制打造了基于大语言模型的 AI 助手 Qwen-7B-Chat。
+
+Qwen-7B 系列模型的特点包括：
+
+1.  **大规模高质量预训练数据**：使用了超过 2.2 万亿 token 的自建大规模预训练数据集进行语言模型的预训练。数据集包括文本和代码等多种数据类型，覆盖通用领域和专业领域。
+2.  **优秀的模型性能**：相比同规模的开源模型，Qwen-7B 在多个评测数据集上具有显著优势，甚至超出 12-13B 等更大规模的模型。评测评估的能力范围包括自然语言理解与生成、数学运算解题、代码生成等。
+3.  **更好地支持多语言**：基于更大词表的分词器在分词上更高效，同时它对其他语言表现更加友好。用户可以在 Qwen-7B 的基础上更方便地训练特定语言的 7B 语言模型。
+4.  **8K 的上下文长度**：Qwen-7B 及 Qwen-7B-Chat 均能支持 8K 的上下文长度，允许用户输入更长的 prompt。
+5.  **支持插件调用**：Qwen-7B-Chat 针对插件调用相关的对齐数据做了特定优化，当前模型能有效调用插件以及升级为 Agent。
+
+### [Code Llama —— 基于 Llama 2 的 AI 代码生成大模型](https://www.oschina.net/p/code-llama)
+
+Code Llama 是基于 Llama 2 的 AI 代码生成大模型，可根据代码和自然语言提示生成代码和有关代码的自然语言，支持多种主流编程语言，包括 Python、C++、Java、PHP、Typescript (Javascript)、C# 和 Bash。
+
+Code Llama 基于 Llama 2 大语言模型打造，提供了三种模型：
+
+-   **Code Llama**\- 基础代码模型
+-   **Code Llama - Python**\- 专门针对 Python 进行优化
+-   **Code Llama - Instruct**\- 专门用于理解自然语言指令
+
+它们具有开放式模型中领先的性能、填充能力、对大型输入上下文的支持以及用于编程任务的零指令跟随能力。所有模型都是基于 16k 标记序列进行训练，并在最多 100k 标记输入上显示出改进。
+
+### [CodeFuse-13B —— 代码大语言模型](https://www.oschina.net/p/codefuse-13b)
+
+CodeFuse-13B 是基于 GPT-NeoX 框架训练的 13B 参数代码生成模型，能够处理 4096 个字符的代码序列。
+
+该模型在 1000B Token 的代码、中文、英文数据数据集上进行预训练，覆盖超过 40 种编程语言。
+
+为了进一步提升生成代码的效果和质量，该模型还在 CodeFuse-Evol-instruction-66k 数据集上进行了微调，使得该模型能够生成更加准确、高效、符合要求的代码。在 HumanEval 评测集上 Pass@1 达到 37.1%(采用 BeamSearch 解码，其中 BeamSize=3)。
+
+### [MiLM-6B —— 小米 AI 大模型](https://www.oschina.net/p/milm-6b)
+
+MiLM-6B 是由小米开发的一个大规模预训练语言模型，参数规模为 64 亿。在 C-Eval 和 CMMLU 上均取得同尺寸最好的效果。
+
+根据 C-Eval 给出的信息，MiLM-6B 模型在具体各科目成绩上，在 STEM（科学、技术、工程和数学教育）全部 20 个科目中，计量师、物理、化学、生物等多个项目获得了较高的准确率。
+
 ### [LLaMA —— Meta 大语言模型](https://www.oschina.net/p/llama)
 
 LLaMA 语言模型全称为 "Large Language Model Meta AI"，是 Meta 的全新大型语言模型（LLM），这是一个模型系列，根据参数规模进行了划分（分为 70 亿、130 亿、330 亿和 650 亿参数不等）。
