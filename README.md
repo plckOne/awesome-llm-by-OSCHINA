@@ -697,3 +697,11 @@ NSQL，这是一个专为 SQL 生成任务设计的全新开源大型基础模�
 - 使用 Spark 或 Dask 运行离线批量推理作业
 - 对 Prometheus 指标和 OpenTelemetry 的内置支持
 - 用于高级 CI/CD 工作流程的灵活 API
+
+
+---
+
+<img src="https://gitee.com/oschina/llm-map/raw/master/llm-tech-map.png" width = "500" />
+
+https://gitee.com/oschina/llm-map
+
